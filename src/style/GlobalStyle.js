@@ -71,6 +71,7 @@ const GlobalStyle = createGlobalStyle`
         color: #ffffff;
     }
     .StyledLearn{
+       overflow: hidden;
         .card {
             border: none;;
         }

@@ -69,10 +69,16 @@ function Footer({ users, theme }) {
               <br />
               {/* <a href="#">Privacy Policy</a> */}
             </div>
-            <span className="FIconBox">
-              <i className="bi bi-facebook"></i>
-              <i className="bi bi-twitter ms-2 me-2"></i>
-              <i className="bi bi-instagram"></i>
+           <span className="FIconBox">
+              <a href="https://www.facebook.com/Semoorgh">
+                <i className="bi bi-facebook"></i>
+              </a>
+              <a href="">
+                <i className="bi bi-twitter ms-2 me-2"></i>
+              </a>
+              <a href="https://www.instagram.com/semoorg/">
+                <i className="bi bi-instagram"></i>
+              </a>
             </span>
           </div>
           <div className="col-md-6 col-lg-3">
@@ -115,7 +121,7 @@ function Footer({ users, theme }) {
             </li>
             <li>
               <span>
-                Phone: <b>(000) 123 456 789</b>
+                Phone: <b>+44 7581 029664</b>
               </span>
             </li>
           </ul>

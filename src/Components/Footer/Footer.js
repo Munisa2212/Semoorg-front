@@ -65,7 +65,7 @@ function Footer({ users, theme }) {
             </div>
             <span className="titleSpan">Semoorg</span>
             <div className="mt-4 mb-4">
-              <span>©2024 by Longsword Building and Maintenance Services.</span>
+              <span>©2025 by Semoorg Building and Maintenance Services.</span>
               <br />
               {/* <a href="#">Privacy Policy</a> */}
             </div>

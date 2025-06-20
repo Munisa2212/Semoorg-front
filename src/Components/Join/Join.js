@@ -53,8 +53,8 @@ const MainImageWrapper = styled.div`
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   overflow: hidden;
   border-radius: 12px;
-  animation: ${(props) =>
-      props.animate === "left" ? "slideLeft" : "slideRight"}
+  animation: ${({ $animate }) =>
+      $animate === "left" ? "slideLeft" : "slideRight"}
     0.6s ease;
 `;
 
@@ -81,12 +81,13 @@ const Controls = styled.div`
   i {
     font-size: 32px;
     cursor: pointer;
-    color: #AF8F5C;
+    color: #af8f5c;
   }
 `;
 
 const TextContent = styled.div`
-  animation: ${(props) => (props.animate === "left" ? "fadeLeft" : "fadeRight")}
+  animation: ${({ $animate }) =>
+      $animate === "left" ? "fadeLeft" : "fadeRight"}
     0.6s ease;
 `;
 
@@ -104,7 +105,6 @@ const Description = styled.p`
 const SmallImagesContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  
 `;
 
 const SmallImage = styled.img`
@@ -182,8 +182,10 @@ function Join({ data }) {
       <GlobalStyle />
       <Section className="specialisation">
         <LeftSide className="leftSide">
-          <ColorBlock className="mainImageWrapper">OUR SPECIALISATION</ColorBlock>
-          <MainImageWrapper key={index} animate={direction}>
+          <ColorBlock className="mainImageWrapper">
+            OUR SPECIALISATION
+          </ColorBlock>
+          <MainImageWrapper key={index} $animate={direction}>
             <MainImage src={data[index].main} alt={`Slide ${index}`} />
           </MainImageWrapper>
         </LeftSide>
@@ -195,7 +197,7 @@ function Join({ data }) {
               <i className="bi bi-arrow-right-circle" onClick={nextSlide}></i>
             </Controls>
 
-            <TextContent key={`text-${index}`} animate={direction}>
+            <TextContent key={`text-${index}`} $animate={direction}>
               <Title>{data[index].title}</Title>
               <Description>{data[index].description}</Description>
             </TextContent>

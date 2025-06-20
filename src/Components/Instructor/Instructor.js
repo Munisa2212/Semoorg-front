@@ -48,22 +48,23 @@ function Instructor() {
                     about our company
                   </h1>
                   <p className="titleP">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Magni eos ut veritatis.
+                    We are passionate innovators driven by purpose. At Semoorg,
+                    we turn ideas into impactful solutions, blending creativity
+                    with technology to shape a better future.
                   </p>
                   <StyledNumberBox>
                     <ul>
                       <li>
-                        <h2 className="titleH fw-bold">45</h2>
-                        <span>Painting</span>
+                        <h2 className="titleH fw-bold">120</h2>
+                        <span>Projects Completed</span>
                       </li>
                       <li>
-                        <h2 className="titleH fw-bold">10,500+</h2>
-                        <span>Our works</span>
+                        <h2 className="titleH fw-bold">25,000+</h2>
+                        <span>Artworks Delivered</span>
                       </li>
                       <li>
-                        <h2 className="titleH fw-bold">3+</h2>
-                        <span>Cities</span>
+                        <h2 className="titleH fw-bold">8+</h2>
+                        <span>Cities Served</span>
                       </li>
                     </ul>
                   </StyledNumberBox>

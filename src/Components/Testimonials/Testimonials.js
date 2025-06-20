@@ -76,7 +76,8 @@ function Testimonials({ data }) {
         <span className="titleSpan">Semoorg</span>
         <h1 className="titleH">OUR ADVANTAGES</h1>
         <p className="titleP">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          At Semoorg, we blend creativity, expertise, and dedication to deliver
+          innovative, high-quality solutions that exceed client expectations.
         </p>
         {/* // -------------------------------------------------- */}
 
@@ -88,15 +89,10 @@ function Testimonials({ data }) {
                   <img src={item.main} className="w-100" alt="img" />
                 </div>
                 <div className="userBox">
-                  <div className="imgCont">
-                    {item.icon}
-                  </div>
+                  <div className="imgCont">{item.icon}</div>
                   <div className="px-4">
-                    <h4>Deep Experience and Reliability</h4>
-                    <span>
-                      This is a space to welcome visitors to the site. Grab
-                      their attention with copy hat clearly states.
-                    </span>
+                    <h4>{item.title}</h4>
+                    <span>{item.description}</span>
                   </div>
                 </div>
               </StyledInnerBlock>

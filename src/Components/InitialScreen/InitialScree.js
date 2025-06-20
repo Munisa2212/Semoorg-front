@@ -37,6 +37,10 @@ const StyledMyButton = styled(MyButton)`
 function InitialScreen() {
   const { setInitialScreen } = useContext(ThemeContext);
 
+  const handleHideScreen = () => {
+    setInitialScreen(false);
+  };
+
   return (
     <InitialScreenBox id="InitialScreenBox">
       <Slide direction="down">
@@ -56,7 +60,7 @@ function InitialScreen() {
         </Slide>
         <Slide direction="right">
           <MyButton
-            onClick={() => setInitialScreen(false)}
+            onClick={handleHideScreen}
             title={"🏢 BuildScape"}
             variant={"dark"}
             rangi={"#AF8F5C"}

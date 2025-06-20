@@ -18,6 +18,7 @@ import Footer from "./Components/Footer";
 import Testimonials from "./Components/Testimonials/Testimonials";
 import GlobalStyle from "./style/GlobalStyle";
 import ThemeContext from "./Context/ThemeContext";
+import InitialScreen from "./Components/InitialScreen";
 
 // Image imports
 import img0 from "./assets/backgrounds/1.jpg";
@@ -69,6 +70,7 @@ const data = [
 
 function App() {
   const [theme, setTheme] = useState("light");
+  const [initialScreen, setInitialScreen] = useState(true);
 
   const toggleTheme = () => {
     setTheme((prev) => (prev === "light" ? "dark" : "light"));
@@ -81,10 +83,11 @@ function App() {
 
   return (
     <Router>
-      <ThemeContext.Provider value={{ theme, toggleTheme }}>
+      <ThemeContext.Provider value={{ theme, toggleTheme, setInitialScreen }}>
         <div className="App">
           <GlobalStyle />
           {/* // -----------------====>>>>>))))------------------------------ */}
+          {initialScreen && <InitialScreen />}
           <NavigationBar />
           <div id="HeaderId">
             <Header />

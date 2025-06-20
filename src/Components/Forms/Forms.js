@@ -115,7 +115,7 @@ function Forms() {
                   <Form.Control
                     className="py-2"
                     as="textarea"
-                    rows={6}
+                    rows={4}
                     name="message"
                     value={formData.message}
                     placeholder="Message"

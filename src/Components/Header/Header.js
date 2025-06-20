@@ -62,8 +62,9 @@ function Header() {
                   <br /> Never before
                 </h1>
                 <StyledP>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Laborum, excepturi?
+                  Unleash your imagination and build something extraordinary.
+                  Push the boundaries of creativity and innovation—make your
+                  mark on the world.
                 </StyledP>
                 <MyButton
                   className="mt-2"

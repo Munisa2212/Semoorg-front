@@ -34,20 +34,20 @@ const StyledQuestions = styled.section`
       padding-bottom: 20px;
     }
     i {
-      color: #AF8F5C;
+      color: #af8f5c;
     }
   }
 `;
 
 const StyledMyButton = styled(MyButton)`
   background: none;
-  border: 1px solid #AF8F5C;
-  color: #AF8F5C;
+  border: 1px solid #af8f5c;
+  color: #af8f5c;
   margin: 40px auto;
   &:hover {
-    background: #AF8F5C;
+    background: #af8f5c;
     color: #fff;
-    border: 1px solid #AF8F5C;
+    border: 1px solid #af8f5c;
   }
 `;
 
@@ -58,8 +58,8 @@ function Questions() {
         <span className="titleSpan">(FAQs)</span>
         <h1 className="titleH">Frequently Asked Questions.</h1>
         <p className="titleP">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mattis non
-          accumsan in, tempor dictum neque.
+          Dive into our most common inquiries to discover how Semoorg can bring
+          your vision to life.
         </p>
         {/* // -------------------------------------------------- */}
         <div className="accordationBlock">
